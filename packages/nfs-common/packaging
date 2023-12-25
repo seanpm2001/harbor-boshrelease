@@ -7,6 +7,5 @@ if ! tar -xzvf ${BOSH_COMPILE_TARGET}/nfs-common/nfs-common.tgz ; then
   exit 1
 fi
 
-mkdir -p ${BOSH_INSTALL_TARGET}/nfs-common
-cp nfs-common/* ${BOSH_INSTALL_TARGET}/nfs-common
-chmod +x ${BOSH_INSTALL_TARGET}/nfs-common/*.sh
+cp nfs-common/* ${BOSH_INSTALL_TARGET}
+chmod +x ${BOSH_INSTALL_TARGET}/*.sh
